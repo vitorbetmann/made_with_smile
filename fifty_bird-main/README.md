@@ -1,24 +1,14 @@
-**Disclaimers:**
+# 🐤 Flappy Bird
 
-• A Flappy Bird Clone made for learning
+🕹️ [Play it online](https://vitorbetmann.itch.io/fifty-bird)  
 
-• Made in C with Raylib.
+## Notes:
 
-• Assets from CS50's Introduction to Game Development.
+- Uses Smile's SceneManager.
+- Built a custom queue to manage pipes with a O(1) enqueue and dequeue operations.
+- Applied tracked iteration optimization so the Bird only checks collision with the next pipe, reducing per-frame computation.
 
-<br/>
-
-**Highlights:**
-
-1. Designed a state machine architecture using function pointers to maintain modular, readable, and scalable code.
-
-2. Built a custom queue to manage pipes with a O(1) enqueue and dequeue operations.
-
-3. Applied tracked iteration optimization so the Bird only checks collision with the next pipe, reducing per-frame computation.
-
-<br/>
-
-**Learning outcomes:**
+## Learning outcomes:
 
 • C: Function Pointers; More about memory management;
 
