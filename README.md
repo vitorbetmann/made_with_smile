@@ -1,7 +1,5 @@
 # Made With [Smile](https://github.com/vitorbetmann/smile)
 
----
-
 ## Context
 
 #### Recreated classic games in C to deepen understanding of low-level programming and game architecture, triggering the development of the Smile library.
