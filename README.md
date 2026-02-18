@@ -1,34 +1,13 @@
 # Made With [Smile](https://github.com/vitorbetmann/smile)
 
 #### Recreated classic games in C to deepen understanding of low-level programming and game architecture, triggering the development of the Smile library.
-#### Shoutout to CS50's Introduction to Game Development for the great lessons and game assets.
+#### Shoutout to [CS50's Introduction to Game Development](https://cs50.harvard.edu/games/) for the great lessons and game assets.
+#### All games are made with [raylib](https://www.raylib.com) for rendering, sound, and input-gathering.
 
----
+## 🐤 Flappy Bird
+- 🗃️ [Repo](https://github.com/vitorbetmann/made_with_smile/tree/main/flappy_bird)
+- 🕹️ [Play it online](https://vitorbetmann.itch.io/fifty-bird)
 
-### 🧱 Breakout
-- Uses Smile's SceneManager, SaveLoad, and Particle System
-
-[Play it on itch]()  
-
----
-
-
-### 🐤 Flappy Bird
-- Uses Smile's SceneManager
-- Built a custom queue to manage pipes with a O(1) enqueue and dequeue operations.
-- Applied tracked iteration optimization so the Bird only checks collision with the next pipe, reducing per-frame computation.
-
-[Play it on itch](https://vitorbetmann.itch.io/fifty-bird)  
-
----
-
-## 🕹️ Games
-
-### 🟢 Pong (
-
-- Does not use any Smile modules but kickstarted the journey.
-- Created a Python script to generate a .cmake file listing all .c files, which is included in CMakeLists.txt to set the executable sources.
-
-[Play it on itch](https://vitorbetmann.itch.io/pong)  
-
----
+## 🟢 Pong
+- 🗃️ [Repo](https://github.com/vitorbetmann/made_with_smile/tree/main/pong)
+- 🕹️ [Play it online](https://vitorbetmann.itch.io/pong)
