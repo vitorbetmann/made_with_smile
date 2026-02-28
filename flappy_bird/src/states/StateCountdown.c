@@ -5,7 +5,7 @@
 #include "Bird.h"
 #include "raylib.h"
 #include "Settings.h"
-#include "StateMachine.h"
+#include "SceneManager.h"
 
 // Data types
 // ----------
@@ -21,7 +21,7 @@ static const float COUNTDOWN_TIME = 0.75;
 static double timer;
 // ---------
 
-void StateCountdownEnter(const void *args) {
+void StateCountdownEnter(void *args) {
   BirdReset(gBird);
 
   timer = 4.0f;
@@ -31,7 +31,7 @@ void StateCountdownUpdate(float dt) {
   timer -= 1.25f * dt;
 
   if (IsTimerOver()) {
-    smSetState("play", nullptr);
+    smSetScene("play", nullptr);
   }
 }
 

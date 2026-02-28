@@ -3,7 +3,7 @@
 
 // Prototypes
 // ----------
-void StateCountdownEnter(const void *args);
+void StateCountdownEnter(void *args);
 void StateCountdownUpdate(float dt);
 void StateCountdownDraw(void);
 

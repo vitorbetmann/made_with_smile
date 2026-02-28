@@ -1,6 +1,6 @@
 #include "states/StateScore.h"
 
-#include <StateMachine.h>
+#include <SceneManager.h>
 #include <stdint.h>
 #include <stdio.h>
 
@@ -31,7 +31,7 @@ Texture2D *medalImg;
 static bool isMedalAwarded;
 // ---------
 
-void StateScoreEnter(const void *args) {
+void StateScoreEnter(void *args) {
   ScoreArgs *scoreArgs = (ScoreArgs *) args;
   score = scoreArgs->score;
 
@@ -52,7 +52,7 @@ void StateScoreEnter(const void *args) {
 
 void StateScoreUpdate(float dt) {
   if (HasValidInput(input2)) {
-    smSetState("countdown", nullptr);
+    smSetScene("countdown", nullptr);
   }
 }
 

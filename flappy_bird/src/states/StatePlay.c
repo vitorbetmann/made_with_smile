@@ -1,6 +1,6 @@
 #include "states/StatePlay.h"
 
-#include <StateMachine.h>
+#include <SceneManager.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -29,7 +29,7 @@ static bool isPaused;
 Texture pauseImg;
 // ---------
 
-void StatePlayEnter(const void *args) {
+void StatePlayEnter(void *args) {
   PipePairManagerInit();
   smStart();
 }
@@ -57,7 +57,7 @@ void StatePlayUpdate(float dt) {
     if (!gBird->isAlive) {
       PlaySound(explosionSound);
       PlaySound(hurtSound);
-      smSetState("score", &scoreArgs);
+      smSetScene("score", &scoreArgs);
     }
 
     if (IsKeyPressed(KEY_P)) {

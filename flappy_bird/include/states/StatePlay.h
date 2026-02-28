@@ -13,7 +13,7 @@ typedef struct {
 // --------
 // Prototypes
 // ----------
-void StatePlayEnter(const void *args);
+void StatePlayEnter(void *args);
 
 void StatePlayUpdate(float dt);
 

@@ -7,7 +7,7 @@
 
 // Prototypes
 // ----------
-void StateScoreEnter(const void *args);
+void StateScoreEnter(void *args);
 
 void StateScoreUpdate(float dt);
 

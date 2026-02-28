@@ -2,7 +2,7 @@
 // --------
 #include "states/StateTitle.h"
 
-#include <StateMachine.h>
+#include <SceneManager.h>
 
 #include "raylib.h"
 #include "Settings.h"
@@ -19,7 +19,7 @@ static const char PROMPT[] = "Press Enter";
 
 void StateTitleUpdate(float dt) {
     if (HasValidInput(input2)) {
-        smSetState("countdown", nullptr);
+        smSetScene("countdown", nullptr);
     }
 }
 

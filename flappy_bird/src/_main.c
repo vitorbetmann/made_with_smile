@@ -6,7 +6,7 @@
 #include "Bird.h"
 #include "Pipe.h"
 #include "Settings.h"
-#include "StateMachine.h"
+#include "SceneManager.h"
 #include "states/StateCountdown.h"
 #include "states/StatePlay.h"
 #include "states/StateScore.h"
@@ -113,16 +113,16 @@ void GameInit(void) {
   // input2 = MOUSE_BUTTON_RIGHT;
 
   smStart();
-  smCreateState("title", nullptr, StateTitleUpdate, StateTitleDraw, nullptr);
-  smCreateState("countdown", StateCountdownEnter, StateCountdownUpdate,
+  smCreateScene("title", nullptr, StateTitleUpdate, StateTitleDraw, nullptr);
+  smCreateScene("countdown", StateCountdownEnter, StateCountdownUpdate,
                 StateCountdownDraw, nullptr);
-  smCreateState("score", StateScoreEnter, StateScoreUpdate, StateScoreDraw,
+  smCreateScene("score", StateScoreEnter, StateScoreUpdate, StateScoreDraw,
                 nullptr);
-  smCreateState("play", StatePlayEnter, StatePlayUpdate, StatePlayDraw,
+  smCreateScene("play", StatePlayEnter, StatePlayUpdate, StatePlayDraw,
                 StatePlayExit);
 
   // Let us begin
-  smSetState("title", nullptr);
+  smSetScene("title", nullptr);
 }
 
 void LoadImages(void) {
