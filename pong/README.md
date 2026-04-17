@@ -1,10 +1,11 @@
 # 🟢 Pong
 
-🕹️ [Play it online](https://vitorbetmann.itch.io/pong)
+🕹️ [Play it on itch.io](https://vitorbetmann.itch.io/pong)
 
-## Smile Features Used:
-
+## Featuring Smile's
+#### Modules:
 - SceneManager
+#### Tools:
 - GenScene
 
 ## Learning outcomes:
