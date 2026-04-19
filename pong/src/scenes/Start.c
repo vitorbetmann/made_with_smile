@@ -41,7 +41,7 @@ void StartEnter(void *args)
 
         font = LoadFont("assets/font.ttf");
         SetTextureFilter(font.texture, TEXTURE_FILTER_POINT);
-        
+
         InitAudioDevice();
 
         paddle_hit = LoadSound("assets/paddle_hit.wav");
@@ -53,9 +53,10 @@ void StartEnter(void *args)
 
     // paddles
     player1 = (Player){(Paddle){10, 10, false}, 1, 0};
-    player2 = (Player){(Paddle){VIRTUAL_WIDTH - PADDLE_WIDTH - 10,
-                                VIRTUAL_HEIGHT - PADDLE_HEIGHT - 10, false},
-                       2, 0};
+    player2 = (Player){
+        (Paddle){VIRTUAL_WIDTH - PADDLE_WIDTH - 10, VIRTUAL_HEIGHT - PADDLE_HEIGHT - 10, false},
+        2,
+        0};
 
     // ball
     StartData *d = args;

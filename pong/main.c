@@ -39,6 +39,12 @@ void toggleAI(Paddle *p)
 
 void update(float dt)
 {
+    // quit
+    if (IsKeyPressed(KEY_ESCAPE))
+    {
+        smStop();
+    }
+
     // fps
     if (IsKeyPressed(KEY_T))
     {
@@ -158,9 +164,9 @@ int main(void)
     smCreateScene("start", StartEnter, StartUpdate, StartDraw, nullptr);
     smSetScene("start", nullptr);
 
-    while (!WindowShouldClose())
+    while (smIsRunning())
     {
-        update(GetFrameTime());
+        update(smGetDt());
         draw();
     }
     unload();
