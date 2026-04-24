@@ -1,0 +1,24 @@
+# IDE
+.idea/
+
+# CMake build directories
+build/
+cmake-build-debug/
+cmake-build-release/
+
+# Compiled objects and libraries
+*.o
+*.a
+*.so
+*.dylib
+
+# Executables
+flappy-bird
+*.exe
+*.out
+
+# macOS
+.DS_Store
+
+# Smile
+smile/
