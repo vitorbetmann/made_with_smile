@@ -11,6 +11,9 @@
 #### Tools:
 - GenScene
 
+## External Libraries
+- raylib
+
 ## Learning outcomes:
 
 - Sprite Sheets
