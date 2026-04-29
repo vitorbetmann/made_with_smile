@@ -10,6 +10,9 @@
 #### Tools:
 - GenScene
 
+## External Libraries
+- raylib
+
 ## Learning outcomes:
 
 - Game Loops
