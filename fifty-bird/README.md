@@ -17,6 +17,9 @@
 #### Tools:
 - GenScene
 
+## External Libraries
+- raylib
+
 ## Learning outcomes:
 
 - Infinite Scrolling
