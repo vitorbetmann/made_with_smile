@@ -1,4 +1,4 @@
-# 🟢 Pong
+# 🏓 Pong
 
 🕹️ [Play it on itch.io](https://vitorbetmann.itch.io/pong)
 
